@@ -3,9 +3,23 @@
 @tailwind utilities;
 
 @layer components{
-    .card-container{
-        @apply shadow-[1px_1px_10px_1px_rgba(0,0,0,0.1)] m-8 text-center rounded-3xl p-8
+    .normal-txt{
+        @apply text-white font-primary
     }
+    .heading-txt{
+        @apply text-white font-thin-heading
+    }
+    .our-creations-text-mobile{
+        @apply absolute bottom-[1rem] left-[1rem] text-white text-2xl w-[80%] font-thin-heading font-[300] z-20
+    }
+    .our-creations-container-mobile{
+        @apply relative after:content-[''] after:absolute after:z-10 after:inset-0 after:bg-black after:opacity-30
+    }
+    .our-creations-container-desktop{
+        @apply relative after:content-[''] after:absolute after:z-10 after:inset-0 after:bg-black after:opacity-50 overflow-hidden h-full w-full
+    }
+
+   
 }
 
 

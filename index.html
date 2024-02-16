@@ -1,19 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- //Google fonts// -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<html class="scroll-smooth" lang="en">
 
-    <!-- Tailwind config -->
-    <link rel="stylesheet" href="/src/input.css">
-    <link rel="stylesheet" href="/src/output.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- //Google fonts// -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet" />
+  <!-- Tailwind config -->
+  <link rel="stylesheet" href="/src/input.css" />
+  <link rel="stylesheet" href="/src/output.css" />
 </head>
-<body>
-    <h1 class="font-thin-heading text-center font-[300] text-[3rem]">IMMERSIVE EXPERIENCE THAT DELIVER</h1>
+
+<body class="scroll-smooth">
+  <header
+    class="bg-[url(/images/mobile/image-hero.jpg)] overflow-x-hidden relative bg-no-repeat bg-center bg-cover h-[150vh] after:content-[''] after:absolute after:z-10 after:inset-0 after:bg-black after:opacity-70 sm:h-[70vh] sm:bg-[url(/images/desktop/image-hero2.jpg)]">
+    <nav class="flex justify-between px-6 mt-8 items-center w-full sm:justify-around sm:items-center">
+      <img src="/images/logo.svg" class="w-auto z-20 h-[5rem]" alt="logo" />
+      <img src="/images/icon-hamburger.svg" id="burguer" class="z-20 sm:hidden" alt="" />
+      <ul id="mobile-menu"
+        class="z-40 transition-all duration-700 translate-x-[100rem] absolute flex-col top-0 right-0 bg-black h-[100vh] w-full sm:translate-x-0 sm:flex sm:static sm:h-auto sm:top-auto sm:left-auto sm:flex-row sm:bg-transparent sm:w-[40%]">
+        <div class="flex items-center justify-between p-6 mt-4 sm:hidden">
+          <li><img src="/images/logo.svg" alt="" /></li>
+          <li><img src="/images/icon-close.svg" id="close-menu" alt="" /></li>
+        </div>
+
+        <div
+          class="flex flex-col justify-center h-full ml-6 sm:m-0 sm:flex sm:flex-row sm:justify-around sm:h-auto sm:w-full">
+          <li class="heading-txt font-[300] text-[2rem] uppercase my-4 sm:text-sm sm:normal-txt sm:font-normal">
+            <a href="#About">About</a>
+          </li>
+          <li class="heading-txt font-[300] text-[2rem] uppercase my-4 sm:text-sm sm:normal-txt sm:font-normal">
+            <a href="#Our-work">Our Work</a>
+          </li>
+          <li class="heading-txt font-[300] text-[2rem] uppercase my-4 sm:text-sm sm:normal-txt sm:font-normal">
+            <a href="">Nico Dev</a>
+          </li>
+          <li class="heading-txt font-[300] text-[2rem] uppercase my-4 sm:text-sm sm:normal-txt sm:font-normal">
+            <a href="">Aristi Dev</a>
+          </li>
+        </div>
+      </ul>
+    </nav>
+
+    <div
+      class="leading-none top-[60%] left-[50%] w-fit translate-x-[-50%] translate-y-[-50%] h-[20rem] absolute sm:w-[40%] sm:absolute sm:bottom-[30%] sm:left-[30.3rem] z-20">
+      <h1 class="heading-txt font-[300] text-[2.7rem] border-[3px] p-3 border-white sm:p-8 sm:text-[4rem]">
+        SOFTWARE DEVELOPMENT MASTERMINDS
+      </h1>
+    </div>
+  </header>
+  <main>
+    <section id="About"
+      class="h-[100vh] flex flex-col justify-center items-center gap-10 m-4 mt-5 sm:h-auto sm:flex sm:justify-start sm:relative sm:items-start sm:my-[8rem] sm:mb-[14rem]">
+
+      <img src="/images/desktop/image-interactive.svg" class="sm:ml-52 sm:h-[40rem]" alt="" />
+
+      <div
+        class="w-[80%] sm:absolute sm:bottom-[-40%] sm:right-0 z-20 sm:w-[40%] sm:h-[100%] bg-white sm:flex sm:flex-col sm:justify-center sm:p-[5rem] sm:translate-x-[-30%]">
+        <h1
+          class="mb-5 text-center text-3xl font-thin-heading font-[300] text-black sm:text-start sm:text-[3rem] sm:leading-tight">
+          LEADERS IN SOFTWARE TECHNOLOGIES
+        </h1>
+        <p class="text-center text-very-dark-gray font-semibold text sm:text-start">
+          At nicorti development, our team is driven by a shared passion for software development. We pride ourselves on our versatility and proficiency across a wide array of technologies. From the frontlines of user interface design to the intricate backend architecture, we're equipped to handle it all.
+        </p>
+      </div>
+    </section>
+
+    <section id="Our-work" class="flex flex-col justify-center items-center m-6 gap-6 ">
+      <div class="flex justify-around items-center w-full ">
+        <h1 class="text-3xl font-thin-heading font-[300] sm:text-[3rem] sm:mb-[4rem] ">
+          OUR CREATIONS
+        </h1>
+        <button
+        class="border-2 border-black py-2 w-[10rem] text-[1.2rem] z-30 font-primary tracking-[0.25em] sm:mb-[4rem]">
+        SEE ALL
+      </button>
+      </div>
+      
+      <div class="flex flex-col gap-3 sm:grid sm:grid-rows-2 sm:grid-cols-4 sm:gap-10 sm:h-[100vh] sm:mx-[10rem]">
+        <div class="our-creations-container-desktop">
+          <img src="/images/mobile/image-deep-earth.jpg" class="block sm:hidden" alt="" />
+          <img src="/images/desktop/page-1.jpg" class="hidden sm:grid sm:w-full sm:h-full" alt="" />
+          <h4 class="our-creations-text-mobile">LANDING PAGE</h4>
+        </div>
+        <div class="our-creations-container-desktop after:opacity-40">
+          <img src="/images/mobile/image-night-arcade.jpg" class="block sm:hidden" alt="" />
+          <img src="/images/desktop/page-2.jpg" class="hidden sm:grid sm:w-full sm:h-full" alt="" />
+          <h4 class="our-creations-text-mobile">RECODE LANDIGN SERVER</h4>
+        </div>
+        <div class="our-creations-container-desktop">
+          <img src="/images/mobile/image-soccer-team.jpg" class="block sm:hidden" alt="" />
+          <img src="/images/desktop/page-3.jpg" class="hidden sm:grid sm:w-full sm:h-full" alt="" />
+          <h4 class="our-creations-text-mobile">TECHNOLOGY CLIENT COMPANY</h4>
+        </div>
+        <div class="our-creations-container-desktop">
+          <img src="/images/mobile/image-grid.jpg" class="block sm:hidden" alt="" />
+          <img src="/images/desktop/page-4.jpg" class="hidden sm:grid sm:w-full sm:h-full" alt="" />
+          <h4 class="our-creations-text-mobile">GOOGLE 2</h4>
+        </div>
+        <div class="our-creations-container-desktop">
+          <img src="/images/mobile/image-from-above.jpg" class="block sm:hidden" alt="" />
+          <img src="/images/desktop/page-5.jpg" class="hidden sm:grid sm:w-full sm:h-full" alt="" />
+          <h4 class="our-creations-text-mobile w-[60%]">META LANDIGN</h4>
+        </div>
+        <div class="our-creations-container-desktop">
+          <img src="/images/mobile/image-pocket-borealis.jpg" class="block sm:hidden" alt="" />
+          <img src="/images/desktop/page-6.jpg" class="hidden sm:grid sm:w-full sm:h-full" alt="" />
+          <h4 class="our-creations-text-mobile">CLUB PENGUIN PAGE</h4>
+        </div>
+        <div class="our-creations-container-desktop">
+          <img src="/images/mobile/image-curiosity.jpg" class="block sm:hidden" alt="" />
+          <img src="/images/desktop/pagina-7.jpg" class="hidden sm:grid sm:w-full sm:h-full" alt="" />
+          <h4 class="our-creations-text-mobile">INSTAGRAM 2</h4>
+        </div>
+        <div class="our-creations-container-desktop">
+          <img src="/images/mobile/image-fisheye.jpg" class="block sm:hidden" alt="" />
+          <img src="/images/desktop/pagina-8.jpg" class="hidden sm:grid sm:w-full sm:h-full" alt="" />
+          <h4 class="our-creations-text-mobile">TELEVISION PAGE</h4>
+        </div>
+      </div>
+
+  
+    </section>
+  </main>
+  <footer class="bg-[#1F1D20] h-[80vh] flex flex-col justify-around items-center">
+    <img class="mt-[1rem] h-[15rem]" src="/images/logo.svg" alt="" />
+    <div class="flex flex-col gap-8 justify-center items-center ">
+      <h6 class="font-primary text-white">About</h6>
+      <h6 class="font-primary text-white">Careers</h6>
+      <h6 class="font-primary text-white">Events</h6>
+      <h6 class="font-primary text-white">Products</h6>
+      <h6 class="font-primary text-white">Support</h6>
+    </div>
+    <div class="flex gap-4 mt-2">
+      <img src="/images/icon-facebook.svg" alt="" />
+      <img src="/images/icon-instagram.svg" alt="" />
+      <img src="/images/icon-pinterest.svg" alt="" />
+      <img src="/images/icon-twitter.svg" alt="" />
+    </div>
+    <p class="text-dark-gray mb-8">
+      &copy; 2024 Nicorti development. All rights reserved.
+    </p>
+  </footer>
+
+  <script src="/src/main.js"></script>
 </body>
+
 </html>
