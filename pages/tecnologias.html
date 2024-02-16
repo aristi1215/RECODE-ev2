@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet" />
+    <!-- Tailwind config -->
+    <link rel="stylesheet" href="/src/input.css" />
+    <link rel="stylesheet" href="/src/output.css" />
+</head>
+
+<body>
+    <div class="snap-y snap-mandatory overflow-auto h-screen">
+        <header
+            class="snap-start h-screen bg-[url('/images/astronauta.jpg')] bg-cover bg-center relative  flex justify-center items-center">
+            <nav class="flex justify-center h-[7vh] items-center w-full fixed top-0 bg-black">
+                <div id="hola" class="flex gap-10 w-full justify-around items-center h-[10vh] relative">
+                    <a href="/index.html" class="heading-txt text-3xl font-[300]">Main Page</a>
+                    <a href="#testimonials" class="heading-txt text-3xl font-[300]">Clients</a>
+                </div>
+            </nav>
+            <div class="flex flex-col items-center justify-center">
+                <h1 class="text-[5rem] heading-txt font-[300]">
+                    CHECK OUT OUR SKILLS
+                </h1>
+                <img src="/images/icon-arrow-down.svg" width="30px" alt="" />
+            </div>
+        </header>
+
+        <section id="frontend" class="snap-start h-screen grid grid-cols-2 w-full justify-center items-center">
+            <div class="flex flex-col justify-around p-10">
+                <h1 class="text-[4rem] mb-10 font-thin-heading font-[300] leading-none">FRONTEND SKILLS</h1>
+                <p class="text-very-dark-gray">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nemo est labore, consequuntur atque sed
+                    veritatis aspernatur tempora qui, temporibus debitis quaerat porro, itaque harum? Eligendi est
+                    provident cupiditate quidem beatae, sint quas repellendus! Eos quam et nisi optio libero, eaque
+                    facilis maiores voluptas minus illo quo eveniet fugiat beatae!
+                </p>
+            </div>
+            <img src="/images/computer-1873831_1920.png" class="h-screen" alt="" />
+        </section>
+        <section class="snap-start h-screen grid grid-cols-2 w-full justify-center items-center">
+            <img src="/images/keyboard.jpg" class="h-screen" alt="" />
+            <div class="flex flex-col justify-around p-10">
+                <h1 class="text-[4rem] mb-10 font-thin-heading font-[300] leading-none">FRAMEWORKS WE USE</h1>
+                <p class="text-very-dark-gray">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius adipisci provident dolorem debitis
+                    quaerat doloribus, amet vel perferendis asperiores sit voluptatibus, maxime, rerum commodi quos?
+                    Saepe aliquam debitis beatae pariatur ducimus. Soluta, magnam ad! Nemo dolor recusandae aliquid
+                    laboriosam ab culpa! Cum praesentium ex eligendi quam iusto, voluptate consectetur mollitia.
+                </p>
+            </div>
+        </section>
+        <section class="snap-start h-screen grid grid-cols-2 w-full justify-center items-center">
+            <div class="flex flex-col justify-around p-10">
+                <h1 class="text-[4rem] mb-10 font-thin-heading font-[300] leading-none">THE LOVE FOR WHAT WE DO</h1>
+                <p class="text-very-dark-gray">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius adipisci provident dolorem debitis
+                    quaerat doloribus, amet vel perferendis asperiores sit voluptatibus, maxime, rerum commodi quos?
+                    Saepe aliquam debitis beatae pariatur ducimus. Soluta, magnam ad! Nemo dolor recusandae aliquid
+                    laboriosam ab culpa! Cum praesentium ex eligendi quam iusto, voluptate consectetur mollitia.
+                </p>
+            </div>
+            <img src="/images/code.png" class="h-screen bg-black" alt="" />
+        </section>
+        <section id="testimonials" class="snap-start h-screen flex flex-col justify-center">
+            <h1 class="text-center text-[3rem] mt-[6rem] ">Clients testimonials</h1>
+            <div class="flex justify-center items-center h-screen m-[2rem] p-[2rem] gap-5">
+                <div class="flex flex-col justify-around items-center gap-10">
+                    <img src="/images/Bad_Bunny_2019_by_Glenn_Francis_(cropped).jpg"
+                        class="w-[6rem] h-[6rem] rounded-full" alt="">
+
+
+                    <h1 class=" font-thin-heading font-[400] leading-none text-3xl">BAD BUNNY</h1>
+                    <p class="text-very-dark-gray">
+                        "¡Wepa! Esta aplicación es fuego, ¡de verdad! Como artista, siempre estoy en la calle, pero con esta app, puedo mantenerme al tanto de mis proyectos en cualquier lugar. La interfaz es suave como el flow en mis canciones, y las opciones de personalización son pura magia. ¡La recomiendo a todos mis colegas en el juego!"
+                    </p>
+                </div>
+                <div class="flex flex-col justify-around items-center gap-10">
+
+                    <img src="/images/micaraCuando.jpg" class="w-[6rem] h-[6rem] rounded-full" alt="">
+                    <h1 class=" font-thin-heading font-[400] leading-none text-3xl">KANYE WEST</h1>
+                    <p class="text-very-dark-gray">
+                        "Escucha, yo soy Kanye. Y cuando Kanye usa una aplicación, sabe que es seria. Esta app ha sido una bendición para mi creatividad. Me mantiene en el camino correcto, manteniendo mi mente enfocada y mis ideas fluyendo. La integración es tan impecable como mi estilo. Definitivamente, una obra maestra en el mundo del software."
+                    </p>
+                </div>
+                <div class="flex flex-col justify-around items-center gap-10">
+                    <img src="/images/mark.jpg" class="w-[6rem] h-[6rem] rounded-full" alt="">
+                    <h1 class=" font-thin-heading font-[400] leading-none text-3xl">MARK ZUCKERBERG</h1>
+                    <p class="text-very-dark-graydark-gray">
+                        "Hey, soy Mark. Y déjame decirte, esta aplicación es simplemente genial. Como CEO, necesito herramientas que estén a la altura de mis expectativas, y esta aplicación supera todas. Simplifica la comunicación, mejora la colaboración y mantiene a mi equipo en la misma página. Esencialmente, es como el algoritmo perfecto para el éxito empresarial."
+                    </p>
+                </div>
+            </div>
+        </section>
+        <footer class="snap-start bg-[#1F1D20] h-screen flex flex-col justify-around items-center">
+            <img class="mt-[1rem] h-[10rem]" src="/images/logo.svg" alt="" />
+            <div class="flex flex-col gap-6 justify-center items-center ">
+              <h6 class="font-primary text-white">About</h6>
+              <h6 class="font-primary text-white">Careers</h6>
+              <h6 class="font-primary text-white">Events</h6>
+              <h6 class="font-primary text-white">Products</h6>
+              <h6 class="font-primary text-white">Support</h6>
+            </div>
+            <div class="flex gap-4 mt-2">
+              <img src="/images/icon-facebook.svg" alt="" />
+              <img src="/images/icon-instagram.svg" alt="" />
+              <img src="/images/icon-pinterest.svg" alt="" />
+              <img src="/images/icon-twitter.svg" alt="" />
+            </div>
+            <p class="text-dark-gray mb-4">
+              &copy; 2024 Nicorti development. All rights reserved.
+            </p>
+          </footer>
+
+        <script src="/src/main.js"></script>
+
+    </div>
+</body>
+
+</html>

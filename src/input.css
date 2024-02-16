@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer components{
     .normal-txt{
         @apply text-white font-primary
@@ -16,7 +17,7 @@
         @apply relative after:content-[''] after:absolute after:z-10 after:inset-0 after:bg-black after:opacity-30
     }
     .our-creations-container-desktop{
-        @apply relative after:content-[''] after:absolute after:z-10 after:inset-0 after:bg-black after:opacity-50 overflow-hidden h-full w-full
+        @apply relative after:content-[''] after:absolute after:z-10 after:inset-0 after:bg-black after:opacity-20 overflow-hidden h-full w-full
     }
 
    
